@@ -4,30 +4,30 @@
 	<meta charset="utf8">
 	<title>Bubble Shooter</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<link href="_css/main.css" rel="stylesheet">
-	<link href="_css/game.css" rel="stylesheet" />
-	<script src="_js/modernizr.js"></script>
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/game.css" rel="stylesheet" />
+	<script src="js/modernizr.js"></script>
 	<script>
 		Modernizr.load([
 			{
 				complete: function () {
 					if(!window.jQuery){
-						Modernizr.load("_js/jquery.js");
+						Modernizr.load("js/jquery.js");
 					}
 				}
 			},
-			"_js/ui.js",
-			"_js/bubble.js",
-			"_js/board.js",
-			"_js/collision-detector.js",
-			"_js/jquery.kaboom.js",
-			"_js/sounds.js",
+			"js/ui.js",
+			"js/bubble.js",
+			"js/board.js",
+			"js/collision-detector.js",
+			"js/jquery.kaboom.js",
+			"js/sounds.js",
 			{
 				test: Modernizr.canvas,
-				yep: ["_js/renderer.js","_js/sprite.js"]
+				yep: ["js/renderer.js","js/sprite.js"]
 			},
 			{
-			load : "_js/game.js",
+			load : "js/game.js",
 			complete: function(){
 				$(function(){
 					var game = new BubbleShoot.Game();
